@@ -1,0 +1,10 @@
+<h1>Requisitos de Matricula</h1>
+<form action="" method="POST">
+    {% crsf_token %}
+    <ul>{% for pregunta in pregutnas %}
+        <li>
+            {{pregunta.pregunta_texto}}
+        </li>
+        {%endfor%}
+    </ul>
+</form>
